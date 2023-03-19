@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Inter', sans-serif;
+    background: url(../img/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card{
+    width: 30rem;
+    height: 35rem;
+    background-color: rgba(57, 57, 57, 0.497);
+    border-radius: 2rem;
+    margin-top: 7rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.imagem{
+    display: flex;
+    justify-content: center;
+}
+.kid{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 20rem;
+    margin-top: 2rem;
+}
+.name{
+    display: flex;
+    justify-content: center;
+}
+h3{
+    font-size: large;
+    margin-top: 1rem;
+    color: rgb(255, 255, 255);
+}
+.info{
+    display: flex;
+    justify-content: center;
+}
+.escola{
+    font-weight: 500px;
+    font-size: large;
+    color: rgb(255, 255, 255);
+    margin-top: 1rem;
+}
+.bio{
+    font-weight: 500px;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    margin-top: 2rem;
+    text-align: center;
+}
+.medias{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8rem;
+}
+.medias a{
+    padding: 20px;
+
+}
+.medias a img{
+    width: 3rem;
+    height: 2rem;
+}
+.medias a img:hover {
+    transition: 0.5s;
+    filter: invert(100%);
+  }
+
+@media only screen and (max-width: 480px) {
+    .card {
+    width: 90%;
+    height: auto;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    }
+    
+    .kid {
+    width: 7rem;
+    height: 7rem;
+    margin-top: 1rem;
+    border-radius: 10rem;
+    }
+    
+    .medias {
+    margin-top: 4rem;
+    }
+    
+    .bio {
+    font-size: medium;
+    margin-top: 1rem;
+    }
+    
+    .info {
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .escola {
+    margin-top: 1rem;
+    font-size: medium;
+    text-align: center;
+    }
+    
+    .name {
+    margin-top: 1rem;
+    }
+    
+    h3 {
+    font-size: medium;
+    margin-top: 1rem;
+    }
+    }
+    
+    @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .card {
+    width: 90%;
+    height: auto;
+    margin-top: 3rem;
+    }
+    
+    .kid {
+    width: 8rem;
+    height: 8rem;
+    margin-top: 1rem;
+    border-radius: 10rem;
+    }
+    
+    .medias {
+    margin-top: 4rem;
+    }
+    
+    .bio {
+    font-size: medium;
+    }
+    }
+    
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .card {
+    width: 50%;
+    height: auto;
+    margin-top: 5rem;
+    }
+    
+    .kid {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 2rem;
+    border-radius: 20rem;
+    }
+    
+    .medias {
+    margin-top: 6rem;
+    }
+    
+    .bio {
+    font-size: large;
+    margin-top: 2rem;
+    }
+    }
+    
+    @media only screen and (min-width: 1025px) {
+    .container{
+    display: flex;
+    justify-content: center;
+    }
+    .card{
+    width: 30rem;
+    height: 35rem;
+    background-color: rgba(57, 57, 57, 0.497);
+    border-radius: 2rem;
+    margin-top: 7rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+    
+    .kid {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 2rem;
+    border-radius: 20rem;
+    }
+    
+    .medias {
+    margin-top: 8rem;
+    }
+    
+    .bio {
+    font-size: larger;
+    margin-top: 2rem;
+    }
+    }
+    @media only screen and (max-width: 720px) {
+    .card {
+        width: 90%;
+        height: auto;
+        margin-top: 3rem;
+        border-radius: 1rem;
+    }
+        
+    .kid {
+        width: 6rem;
+        height: 6rem;
+        margin-top: 1rem;
+        border-radius: 10rem;
+    }
+        
+    .medias {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 4rem;
+        flex-wrap: wrap;
+    }
+
+    .medias a {
+        padding: 10px;
+    }
+        
+    .medias a img {
+        width: 2rem;
+        height: 2rem;
+        margin: 0.5rem;
+    }
+        
+     .bio {
+        font-size: medium;
+        margin-top: 1rem;
+    }
+        
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+        
+    .escola {
+        margin-top: 1rem;
+        font-size: medium;
+        text-align: center;
+    }
+        
+    .name {
+        margin-top: 1rem;
+    }
+        
+    h3 {
+        font-size: medium;
+        margin-top: 1rem;
+    }
+    }
